@@ -6,7 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+
+a, button {
+	cursor: pointer;
+}
+
+nav {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,7 +23,7 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+nav .name {
 	font-size: 26px;
 }
 
@@ -35,7 +40,7 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
 }
 
 .social-link img {
@@ -50,7 +55,7 @@ body {
 	position: relative;
 }
 
-.picture.left::before {
+#about-picture::before {
 	content: ' ';
 	background-color: #E5975F;
 	width: 374px;
@@ -69,11 +74,12 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
 #about-me {
 	flex: 2
 }
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -90,9 +96,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -110,9 +113,15 @@ body {
 }
 .item-column {
 	position: relative;
-	margin-bottom: 0 !important;
 	padding: 0;
 }
+
+.item-column>img{
+	cursor: pointer;
+	padding: .5em;
+	
+}
+
 .item-column::after{
 	content: "";
 	display: block;
@@ -124,7 +133,6 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	padding: .5em;
 }
 .mg-prev, .mg-next {
 	width: 30px;
@@ -146,6 +154,7 @@ body {
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
+	font-size: 2.5em;
 	font-weight: 300;
 
 }
@@ -201,7 +210,8 @@ body {
 #contact .container {
 	display: flex;
 }
-.picture.right::before {
+
+#contact-picture::before {
 	content: ' ';
 	background-color: #BEB45A;
 	width: 374px;
@@ -211,10 +221,11 @@ body {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
 	flex : 2;
-
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -248,7 +259,7 @@ input[type="submit"] {
 	.picture {
 		flex : 2;
 	}
-	#about, #contact .container {
+	#about, .container {
 		align-items: center;
 	}
 	.about-me__title {
@@ -268,7 +279,7 @@ input[type="submit"] {
 	.picture {
 		width: 50%;
 	}
-	.picture.left::before {
+	#about-picture::before {
 		width: 100%;
 		height: 30%;
 		position: absolute;
@@ -306,10 +317,10 @@ input[type="submit"] {
 	#contact .container {
 		flex-direction: column;
 	}
-	#contact .picture.right {
+	#contact-picture {
 		margin-top: 1em;
 	}
-	.picture.right::before {
+	#contact-picture::before {
 		width: 100%;
 		height: 30%;
 		position: absolute;
@@ -320,20 +331,20 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	nav {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	nav .nav, nav .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	nav .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
-	.picture.left::before, .picture.right::before {
+	#about-picture::before, #contact-picture::before {
 		height: 150px;
 	}
 	#services .container {
@@ -342,7 +353,7 @@ input[type="submit"] {
 	.service {
 		max-width: 90%;
 	}
-	#about, #contact {
+	#about, #contact .container {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
@@ -353,4 +364,5 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
 
