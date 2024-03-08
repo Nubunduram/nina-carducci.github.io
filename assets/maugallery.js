@@ -116,7 +116,7 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
-    prevImage(lightboxId) {
+    prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function () {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -155,7 +155,7 @@
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
-    nextImage(lightboxId) {
+    nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function () {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -234,7 +234,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 

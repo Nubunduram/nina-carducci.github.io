@@ -366,3 +366,6 @@ input[type="submit"] {
 }
 
 
+.img-fluid {
+	width: 100%;
+}
