@@ -2,19 +2,21 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
 
-a, button {
+a,
+button {
 	cursor: pointer;
 }
 
 nav {
 	background-color: white;
 	position: sticky;
-	top:0;
+	top: 0;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -74,6 +76,7 @@ nav .name {
 
 .picture img {
 	width: 100%;
+	height: auto;
 }
 
 #about-me {
@@ -85,56 +88,66 @@ nav .name {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-.title{
+.title {
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
+	background-color: #000;
+	border-radius: 0;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
+
 .item-column {
 	position: relative;
 	padding: 0;
 }
 
-.item-column>img{
+.item-column>img {
 	cursor: pointer;
 	padding: .5em;
-	
+
 }
 
-.item-column::after{
+.item-column::after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
 
 }
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.mg-prev, .mg-next {
+
+.mg-prev,
+.mg-next {
 	width: 30px;
 	height: 30px;
 	border-radius: 00%;
@@ -151,6 +164,7 @@ nav .name {
 	margin: auto;
 	padding-block: 3em;
 }
+
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
@@ -158,6 +172,7 @@ nav .name {
 	font-weight: 300;
 
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -166,10 +181,11 @@ nav .name {
 
 #services {
 	margin: auto;
-	background-color: #A8D5D8 ;
+	background-color: #A8D5D8;
 	position: relative;
 }
-#services .container::before{
+
+#services .container::before {
 	content: ' ';
 	background-color: #1C6474;
 	position: absolute;
@@ -183,7 +199,7 @@ nav .name {
 #services .container {
 	justify-content: space-between;
 	display: flex;
-	padding : 2em 0;
+	padding: 2em 0;
 
 }
 
@@ -201,7 +217,7 @@ nav .name {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #D8D3A8;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -223,7 +239,7 @@ nav .name {
 }
 
 .form-container {
-	flex : 2;
+	flex: 2;
 }
 
 form {
@@ -250,6 +266,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
@@ -257,28 +274,43 @@ input[type="submit"] {
 
 @media all and (max-width: 1180px) {
 	.picture {
-		flex : 2;
+		flex: 2;
 	}
-	#about, .container {
+
+	#about,
+	.container {
 		align-items: center;
 	}
+
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+
+	#about-me h6,
+	#about-me p {
 		width: 100%;
+	}
+
+	.form-container form {
+		width: 100%;
+	}
+
+	#contact {
+		padding-inline: 0;
 	}
 }
 
 @media all and (max-width: 1000px) {
-	#about{
+	#about {
 		flex-direction: column;
 
 	}
+
 	.picture {
 		width: 50%;
 	}
+
 	#about-picture::before {
 		width: 100%;
 		height: 30%;
@@ -288,24 +320,28 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+
+	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
 	}
+
 	#services .container {
 		flex-direction: column;
 	}
+
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		margin: 2em 0
 	}
-	.service__description{
+
+	.service__description {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
@@ -317,9 +353,11 @@ input[type="submit"] {
 	#contact .container {
 		flex-direction: column;
 	}
+
 	#contact-picture {
 		margin-top: 1em;
 	}
+
 	#contact-picture::before {
 		width: 100%;
 		height: 30%;
@@ -335,31 +373,42 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	nav .nav, nav .nav ul {
+
+	nav .nav,
+	nav .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
+
 	nav .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
-	#about-picture::before, #contact-picture::before {
+
+	#about-picture::before,
+	#contact-picture::before {
 		height: 150px;
 	}
+
 	#services .container {
 		align-items: center;
 	}
+
 	.service {
 		max-width: 90%;
 	}
-	#about, #contact .container {
+
+	#about,
+	#contact .container {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
+
 	.picture {
 		width: 80%;
 	}
@@ -369,3 +418,364 @@ input[type="submit"] {
 .img-fluid {
 	width: 100%;
 }
+
+/* Manually Added boostrap because purge.css couldn't get it */
+
+.col-auto {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.col-1 {
+	flex: 0 0 auto;
+	width: 8.33333333%;
+}
+
+.col-2 {
+	flex: 0 0 auto;
+	width: 16.66666667%;
+}
+
+.col-3 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}
+
+.col-5 {
+	flex: 0 0 auto;
+	width: 41.66666667%;
+}
+
+.col-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-7 {
+	flex: 0 0 auto;
+	width: 58.33333333%;
+}
+
+.col-8 {
+	flex: 0 0 auto;
+	width: 66.66666667%;
+}
+
+.col-9 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-10 {
+	flex: 0 0 auto;
+	width: 83.33333333%;
+}
+
+.col-11 {
+	flex: 0 0 auto;
+	width: 91.66666667%;
+}
+
+.col-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.col-sm {
+	flex: 1 0 0%;
+}
+
+.col-sm-auto {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.col-sm-1 {
+	flex: 0 0 auto;
+	width: 8.33333333%;
+}
+
+.col-sm-2 {
+	flex: 0 0 auto;
+	width: 16.66666667%;
+}
+
+.col-sm-3 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-sm-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}
+
+.col-sm-5 {
+	flex: 0 0 auto;
+	width: 41.66666667%;
+}
+
+.col-sm-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-sm-7 {
+	flex: 0 0 auto;
+	width: 58.33333333%;
+}
+
+.col-sm-8 {
+	flex: 0 0 auto;
+	width: 66.66666667%;
+}
+
+.col-sm-9 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-sm-10 {
+	flex: 0 0 auto;
+	width: 83.33333333%;
+}
+
+.col-sm-11 {
+	flex: 0 0 auto;
+	width: 91.66666667%;
+}
+
+.col-sm-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.col-md {
+	flex: 1 0 0%;
+}
+
+.col-md-auto {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.col-md-1 {
+	flex: 0 0 auto;
+	width: 8.33333333%;
+}
+
+.col-md-2 {
+	flex: 0 0 auto;
+	width: 16.66666667%;
+}
+
+.col-md-3 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-md-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}
+
+.col-md-5 {
+	flex: 0 0 auto;
+	width: 41.66666667%;
+}
+
+.col-md-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-md-7 {
+	flex: 0 0 auto;
+	width: 58.33333333%;
+}
+
+.col-md-8 {
+	flex: 0 0 auto;
+	width: 66.66666667%;
+}
+
+.col-md-9 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-md-10 {
+	flex: 0 0 auto;
+	width: 83.33333333%;
+}
+
+.col-md-11 {
+	flex: 0 0 auto;
+	width: 91.66666667%;
+}
+
+.col-md-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.col-lg {
+	flex: 1 0 0%;
+}
+
+.col-lg-auto {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.col-lg-1 {
+	flex: 0 0 auto;
+	width: 8.33333333%;
+}
+
+.col-lg-2 {
+	flex: 0 0 auto;
+	width: 16.66666667%;
+}
+
+.col-lg-3 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-lg-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}
+
+.col-lg-5 {
+	flex: 0 0 auto;
+	width: 41.66666667%;
+}
+
+.col-lg-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-lg-7 {
+	flex: 0 0 auto;
+	width: 58.33333333%;
+}
+
+.col-lg-8 {
+	flex: 0 0 auto;
+	width: 66.66666667%;
+}
+
+.col-lg-9 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-lg-10 {
+	flex: 0 0 auto;
+	width: 83.33333333%;
+}
+
+.col-lg-11 {
+	flex: 0 0 auto;
+	width: 91.66666667%;
+}
+
+.col-lg-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.col-xl {
+	flex: 1 0 0%;
+}
+
+.col-xl-auto {
+	flex: 0 0 auto;
+	width: auto;
+}
+
+.col-xl-1 {
+	flex: 0 0 auto;
+	width: 8.33333333%;
+}
+
+.col-xl-2 {
+	flex: 0 0 auto;
+	width: 16.66666667%;
+}
+
+.col-xl-3 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-xl-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+}
+
+.col-xl-5 {
+	flex: 0 0 auto;
+	width: 41.66666667%;
+}
+
+.col-xl-6 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-xl-7 {
+	flex: 0 0 auto;
+	width: 58.33333333%;
+}
+
+.col-xl-8 {
+	flex: 0 0 auto;
+	width: 66.66666667%;
+}
+
+.col-xl-9 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-xl-10 {
+	flex: 0 0 auto;
+	width: 83.33333333%;
+}
+
+.col-xl-11 {
+	flex: 0 0 auto;
+	width: 91.66666667%;
+}
+
+.col-xl-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+  }
+
+  .modal-backdrop.fade {
+	opacity: 0;
+  }
+  
+  .modal-backdrop.show {
+	opacity: 0.5;
+  }
