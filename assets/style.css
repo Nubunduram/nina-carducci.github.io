@@ -38,6 +38,8 @@ nav .name {
 
 .nav li {
 	padding-inline: 10px;
+	display: grid;
+	place-content: center;
 }
 
 .nav a {
@@ -47,6 +49,7 @@ nav .name {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
