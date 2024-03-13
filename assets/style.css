@@ -1,11 +1,11 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
-
 * {
 	font-family: 'Inter';
 	font-style: normal;
+}
+
+body {
+	max-width: 1920px;
+	margin: auto;
 }
 
 a,
@@ -422,7 +422,7 @@ input[type="submit"] {
 	width: 100%;
 }
 
-/* Manually Added boostrap because purge.css couldn't get it */
+/* Manually Added boostrap class because purge.css couldn't get it since its not hard coded in the JS */
 
 .col-auto {
 	flex: 0 0 auto;

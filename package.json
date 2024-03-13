@@ -3,7 +3,6 @@
     "purgecss": "^5.0.0"
   },
   "scripts": {
-    "build": "purgecss --css ./assets/bootstrap/bootstrap.css --content \"index.html\" \"./assets/bootstrap/*js\" \"./assets/*.js\" --output ./assets/dist/bootstrap.min.css && uglifyjs ./assets/maugallery.js -o ./assets/dist/maugallery.min.js && uglifyjs ./assets/scripts.js -o  ./assets/dist/scripts.min.js",
-    "lighthouse": "lighthouse http://localhost:5500"
+    "build": "purgecss --css ./assets/bootstrap/bootstrap.css --content \"index.html\" \"./assets/bootstrap/*js\" \"./assets/*.js\" --output ./assets/dist/bootstrap.min.css && uglifyjs ./assets/maugallery.js -o ./assets/dist/maugallery.min.js && uglifyjs ./assets/scripts.js -o  ./assets/dist/scripts.min.js"
   }
 }
