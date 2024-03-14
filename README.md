@@ -61,5 +61,3 @@ Details of debugged features and their status:
 |----|--------|----------------|-----------------|--------|----------------------|
 | 1  | Addition of Active class in addition to the active-tag class when clicking on a filter button | Button Default Activated on ALL but the active property is not added when clicking a new filter button | Addition of the Active property to the clicked filter button | Resolved | - |
 | 2  | Modification of the image index on click +1 for next -1 for prev | Next & Prev buttons do not work in the gallery, no reaction when clicked | Image switches to the previous or next one when the buttons are clicked | Resolved | - |
-
-This outlines the enhancements made to Nina Carducci's website, including image optimization, bug fixing, SEO, accessibility improvements, and additional client requests.
