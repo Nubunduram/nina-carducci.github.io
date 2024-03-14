@@ -10,6 +10,10 @@
 This repository contains details of the project aimed at optimizing Nina Carducci's website, a professional photographer based in Bordeaux, France. 
 The intervention report below outlines the various enhancements made to the site, as well as additional achievements requested by the client.
 
+## LightHouse report Before / After
+
+![image](./assets/images/lighthouse-report.png "Lighthouse Report")
+
 ## Features
 
 - Presentation of Nina Carducci's photography projects, with high-quality images and detailed descriptions.
